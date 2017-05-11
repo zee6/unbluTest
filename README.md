@@ -1,6 +1,6 @@
 # 
 
-# Introductio {#AgentDeskSetupAndUserGuide-Introduction}
+# Introduction {#AgentDeskSetupAndUserGuide-Introduction}
 
 This document is designed to get you up and running with unblu. It will take you through all of the features of the Agent Desk and show you, in simple steps, how to implement them.
 
