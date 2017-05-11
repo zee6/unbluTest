@@ -17,7 +17,7 @@ There are really three areas where the hierarchical model is present:
 
 * The role hierarchy defines ‘what’ configuration parameters a role can see and change.
 * The level hierarchy describes the structures within which configuration parameters are set.
-* The runtime precedence defines which parameters are consumed by the unblu collaboration server. 
+* The runtime precedence defines which parameters are consumed by the unblu collaboration server. 
 
 ### Level Inheritance Model for the Visitor Side {#AgentDeskSetupAndUserGuide-LevelInheritanceModelfortheVisitorSide}
 
@@ -29,7 +29,7 @@ Global \(Settings\) &gt; Account \(Settings\) &gt; Domains \(Edit domain &gt; Se
 
 Here is the order of how the unblu collaboration server will process configuration settings on the visitor side during runtime \(Runtime Precedence\):
 
-API Keys \(Edit APIKey &gt; Settings\)  &gt; Domains \(Edit domain &gt; Settings\) &gt; Account \(Settings\) &gt; Global \(Settings\)
+API Keys \(Edit APIKey &gt; Settings\)  &gt; Domains \(Edit domain &gt; Settings\) &gt; Account \(Settings\) &gt; Global \(Settings\)
 
 ### Level Inheritance Model for the Agent Side {#AgentDeskSetupAndUserGuide-LevelInheritanceModelfortheAgentSide}
 
@@ -41,7 +41,7 @@ Global \(Settings\) -&gt; Account \(Settings\) -&gt; Teams \(Edit team &gt; Sett
 
 Here is the order of how the unblu collaboration server will process configuration settings on the agent side during runtime \(Runtime Precedence\):
 
-Users \(Edit user &gt; Settings\) &gt; Teams \(Edit team &gt; Settings\) &gt; Account \(Settings\) &gt; Global \(Settings\) 
+Users \(Edit user &gt; Settings\) &gt; Teams \(Edit team &gt; Settings\) &gt; Account \(Settings\) &gt; Global \(Settings\)
 
 Changes you make higher up in the dependency tree propagate downwards. However, and this is a crucial point in understanding the hierarchy, downstream configurations are the ones that the unblu collaboration server uses to populate your system. Whatever configuration parameter is set at the lowest node \(at the bottom\) of any given dependency tree is the configuration parameter that the running system will consume. For example, if you set the language for the help function \(Key:`com.unblu.core.gearmenu.gearMenuUriHelpSupportedLanguages`\) to be English \(en\) higher up in the tree but a particular agent at the bottom of the tree is set to Italian then that agent will see Italian while all other agents see English because the unblu collaboration server will pick up the setting for Italian for that particular agent and use the inherited values/defaults for the others.
 
@@ -55,7 +55,7 @@ Imagine a large organization that has a single domain but wants their site instr
 
 The point here regarding hierarchies is that the same results could be obtained by setting configuration values at the Domain level. And if these two settings are at odds with each other then the net effect could cause significant problems.
 
-## Inheritance Troubleshooting Tips  {#AgentDeskSetupAndUserGuide-InheritanceTroubleshootingTips}
+## Inheritance Troubleshooting Tips {#AgentDeskSetupAndUserGuide-InheritanceTroubleshootingTips}
 
 In the Agent Desk, configuration parameters that have been changed are colored dark gray. Configuration parameters that have not been changed from the default values are light gray.
 
@@ -72,6 +72,4 @@ The picture above is what this example looks like when viewing from the Agent De
 When troubleshooting, check the most ‘granular’ level first to see if it matches what you think you should be seeing. For example, as the APIKey level will trump the Domains, Account and Global Settings during runtime, then make sure you know what settings have been changed first in the APIKey Settings, then work your way up the tree through Domains then Account then Global.
 
 Use the ‘i’ icon beside the configuration value \(in Settings\) to view inheritance information. To see a little more information about the configuration value use the Advanced button then, from the Options menu, select Technical Labels. In this way you can see the default \(or inherited\) value and the values that have been altered.
-
-
 
