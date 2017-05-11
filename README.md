@@ -1,6 +1,6 @@
 # 
 
-# Introduction {#AgentDeskSetupAndUserGuide-Introduction}
+# Introductio {#AgentDeskSetupAndUserGuide-Introduction}
 
 This document is designed to get you up and running with unblu. It will take you through all of the features of the Agent Desk and show you, in simple steps, how to implement them.
 
@@ -32,7 +32,7 @@ If you want to ‘redesign’ the interface to reflect corporate standards and b
 
 ### 1.1.3.The Supervisor {#AgentDeskSetupAndUserGuide-TheSupervisor}
 
-Below the Admin user is the Supervisor role. The Supervisor can see all members of their own team and can use the various tools available to run that team efficiently. The Supervisor can also create and edit Registered Users in their own team. Only a small subset of some configuration items are available to the supervisor role as it is designed to serve the needs of a real-life supervisor, and indeed to deliberately keep technical complexities out of their scope. 
+Below the Admin user is the Supervisor role. The Supervisor can see all members of their own team and can use the various tools available to run that team efficiently. The Supervisor can also create and edit Registered Users in their own team. Only a small subset of some configuration items are available to the supervisor role as it is designed to serve the needs of a real-life supervisor, and indeed to deliberately keep technical complexities out of their scope.
 
 ### 1.1.4.Registered Users {#AgentDeskSetupAndUserGuide-RegisteredUsers}
 
@@ -42,7 +42,7 @@ These are all users known to the system who are not Super Admins or Admins or Su
 
 ### 1.1.5.Teams {#AgentDeskSetupAndUserGuide-Teams}
 
-Teams are also arranged in a hierarchical design. This means that you can set ‘parent’ and ‘child’ teams in the hierarchy. The Supervisor of a parent team can ‘see’ users in a team that is a child of the team of which he is a member, while the Supervisor of a child team can only see users in his own team. These distinctions can be turned into business models as, for example, a parent team might be populated by portfolio analysts who engage with high-value clients. But if the customer in a session with a portfolio analyst asks about a loan or a given financial instrument, the Supervisor of the parent team will be able to see who is available to serve that client in the child teams and forward the session to the appropriate member of a child team. 
+Teams are also arranged in a hierarchical design. This means that you can set ‘parent’ and ‘child’ teams in the hierarchy. The Supervisor of a parent team can ‘see’ users in a team that is a child of the team of which he is a member, while the Supervisor of a child team can only see users in his own team. These distinctions can be turned into business models as, for example, a parent team might be populated by portfolio analysts who engage with high-value clients. But if the customer in a session with a portfolio analyst asks about a loan or a given financial instrument, the Supervisor of the parent team will be able to see who is available to serve that client in the child teams and forward the session to the appropriate member of a child team.
 
 ## 1.2.Design Strategy {#AgentDeskSetupAndUserGuide-DesignStrategy}
 
@@ -54,11 +54,9 @@ After creating the users and teams we will look at some of the monitoring and st
 
 After working through this whole document you will have a clearer idea of how you want to integrate unblu with your current processes.
 
-
-
 **Note:**If you already have your own identity management system and intend to use the unblu User Management Synchronization Tool in order to automatically populate the unblu database with your users and organizational structures you should know that you must take care when configuring the Synchronization Tool. Your synchronization strategy can have an effect on the functionality of the unblu Agent Desk. You can still manipulate the Agent Desk as described here but you must employ the correct synchronization strategy to ensure that the right data is being synchronized in the right way. For more on this topic see:[https://www.unblu.com/en/doc/latest/user-management-synchronization-tool-specification](https://www.unblu.com/en/doc/latest/user-management-synchronization-tool-specification)
 
 ## 1.3.Thoughts on Modelling {#AgentDeskSetupAndUserGuide-ThoughtsonModelling}
 
-When you are considering how to structure the agent desk keep the following in mind: You want the whole design to enable you to draw a direct line between a visitor to your web site and the optimal agent \(for that particular visitor\) within your company. Every decision you make regarding design should have an overarching picture of how to get exactly the right person or team communicating with a visitor. 
+When you are considering how to structure the agent desk keep the following in mind: You want the whole design to enable you to draw a direct line between a visitor to your web site and the optimal agent \(for that particular visitor\) within your company. Every decision you make regarding design should have an overarching picture of how to get exactly the right person or team communicating with a visitor.
 
