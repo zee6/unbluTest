@@ -16,7 +16,7 @@ The unblu Agent Desk uses a system of hierarchy/inheritance. This means that bus
 
 While the Super Admin role must be filled by an experienced technical person, all other roles below this level \(from Admin to Registered User\) represent business roles. And while this design may seem restrictive at first blush it is highly-configurable, makes it easy to manage, and provides a logical framework in which to build efficient teams and processes.
 
-**Note:**Each person can only be assigned one single role. This is both in order to comply with security considerations and to simplify the potential complexity involved when setting up an efficient customer-engagement infrastructure.
+**Note: **Each person can only be assigned one single role. This is both in order to comply with security considerations and to simplify the potential complexity involved when setting up an efficient customer-engagement infrastructure.
 
 unblu’s design makes it easy to propagate changes through the system without ‘interfering’ with any real-life customer-engagement professionals who need only to deal with customers.
 
@@ -38,7 +38,7 @@ Below the Admin user is the Supervisor role. The Supervisor can see all members 
 
 These are all users known to the system who are not Super Admins or Admins or Supervisors. The Registered user role is designed to keep all technical considerations elsewhere and allow agents to simply engage with the customer.
 
-**Note:**There is a role below Registered user in the hierarchy: Web user, which means a user not known to the system. We would strongly advise you to only allow Registered user roles, and above, to manipulate or engage with your system in any way.
+**Note: **There is a role below Registered user in the hierarchy: Web user, which means a user not known to the system. We would strongly advise you to only allow Registered user roles, and above, to manipulate or engage with your system in any way.
 
 ### Teams {#AgentDeskSetupAndUserGuide-Teams}
 
@@ -54,7 +54,7 @@ After creating the users and teams we will look at some of the monitoring and st
 
 After working through this whole document you will have a clearer idea of how you want to integrate unblu with your current processes.
 
-**Note:**If you already have your own identity management system and intend to use the unblu User Management Synchronization Tool in order to automatically populate the unblu database with your users and organizational structures you should know that you must take care when configuring the Synchronization Tool. Your synchronization strategy can have an effect on the functionality of the unblu Agent Desk. You can still manipulate the Agent Desk as described here but you must employ the correct synchronization strategy to ensure that the right data is being synchronized in the right way. For more on this topic see:[https://www.unblu.com/en/doc/latest/user-management-synchronization-tool-specification](https://www.unblu.com/en/doc/latest/user-management-synchronization-tool-specification)
+**Note: **If you already have your own identity management system and intend to use the unblu User Management Synchronization Tool in order to automatically populate the unblu database with your users and organizational structures you should know that you must take care when configuring the Synchronization Tool. Your synchronization strategy can have an effect on the functionality of the unblu Agent Desk. You can still manipulate the Agent Desk as described here but you must employ the correct synchronization strategy to ensure that the right data is being synchronized in the right way. For more on this topic see:[https://www.unblu.com/en/doc/latest/user-management-synchronization-tool-specification](https://www.unblu.com/en/doc/latest/user-management-synchronization-tool-specification)
 
 ## Thoughts on Modelling {#AgentDeskSetupAndUserGuide-ThoughtsonModelling}
 

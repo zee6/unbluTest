@@ -51,7 +51,7 @@ If you set a configuration parameter to ‘A’ at the Account level and set the
 
 Imagine a large organization that has a single domain but wants their site instrumented with two \(or more\) different versions of unblu. For example, one version uses ‘chat only’ and the other uses ‘PIN only’, then you could define whether unblu uses chat or PIN at the APIKey level using two, or more, generated API keys to differentiate between the functionality applied to a single Domain. In practice this simply means defining the parameter\(s\), in this case, at:
 
-**Account &gt; APIKeys &gt;**\(Click the pencil \(Edit\) icon then the Edit APIKey modal window slides in from the right\)**&gt; Settings**\(here you would make the changes that will be consumed by the unblu collaboration server at runtime\)
+**Account &gt; APIKeys &gt; **\(Click the pencil \(Edit\) icon then the Edit APIKey modal window slides in from the right\)**&gt; Settings **\(here you would make the changes that will be consumed by the unblu collaboration server at runtime\)
 
 The point here regarding hierarchies is that the same results could be obtained by setting configuration values at the Domain level. And if these two settings are at odds with each other then the net effect could cause significant problems.
 
